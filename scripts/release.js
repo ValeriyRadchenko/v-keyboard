@@ -22,6 +22,9 @@ const distDir = path.join(rootDir, 'dist');
 const nodeFile = `${repo}.node`;
 const nodePath = path.join(buildDir, nodeFile);
 
+console.log('Installing dependencies...');
+execSync('npm install --ignore-scripts', { stdio: 'inherit', cwd: rootDir });
+
 console.log('Building native addon and TypeScript...');
 execSync('npx node-gyp rebuild', { stdio: 'inherit', cwd: rootDir });
 execSync('npx tsc', { stdio: 'inherit', cwd: rootDir });

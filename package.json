@@ -1,6 +1,6 @@
 {
   "name": "virtual-keyboard",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -21,7 +21,9 @@
   },
   "type": "commonjs",
   "devDependencies": {
-    "node-addon-api": "^8.6.0",
     "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "node-addon-api": "^8.6.0"
   }
 }
