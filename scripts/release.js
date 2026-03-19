@@ -22,9 +22,12 @@ const distDir = path.join(rootDir, 'dist');
 const nodeFile = `${repo}.node`;
 const nodePath = path.join(buildDir, nodeFile);
 
+console.log('Building native addon and TypeScript...');
+execSync('npx node-gyp rebuild', { stdio: 'inherit', cwd: rootDir });
+execSync('npx tsc', { stdio: 'inherit', cwd: rootDir });
+
 if (!fs.existsSync(nodePath)) {
   console.error(`Native addon not found at ${nodePath}`);
-  console.error('Run "npm run build" first.');
   process.exit(1);
 }
 

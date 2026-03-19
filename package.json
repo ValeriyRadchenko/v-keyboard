@@ -20,9 +20,6 @@
     "url": "git+ssh://git@github.com/ValeriyRadchenko/v-keyboard.git"
   },
   "type": "commonjs",
-  "dependencies": {
-    "uiohook-napi": "^1.5.4"
-  },
   "devDependencies": {
     "node-addon-api": "^8.6.0",
     "typescript": "^5.9.3"
