@@ -6,6 +6,7 @@
   "scripts": {
     "install": "node scripts/install.js",
     "build": "npx node-gyp rebuild && npx tsc",
+    "release": "node scripts/release.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
