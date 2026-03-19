@@ -1,0 +1,29 @@
+{
+  "name": "virtual-keyboard",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install": "node scripts/install.js",
+    "build": "npx node-gyp rebuild && npx tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Virtual Keyboard",
+    "Key press emulation"
+  ],
+  "author": "Valerii Radchenko",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ValeriyRadchenko/v-keyboard.git"
+  },
+  "type": "commonjs",
+  "dependencies": {
+    "uiohook-napi": "^1.5.4"
+  },
+  "devDependencies": {
+    "node-addon-api": "^8.6.0",
+    "typescript": "^5.9.3"
+  }
+}
