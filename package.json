@@ -1,8 +1,8 @@
 {
   "name": "virtual-keyboard",
-  "version": "0.0.5",
+  "version": "0.1.0",
   "description": "",
-  "main": "index.js",
+  "main": "./dist/main.js",
   "scripts": {
     "install": "node scripts/install.js",
     "build": "npx node-gyp rebuild && npx tsc",
@@ -21,9 +21,21 @@
   },
   "type": "commonjs",
   "devDependencies": {
+    "@types/node": "^25.5.0",
     "typescript": "^5.9.3"
   },
   "dependencies": {
+    "bindings": "^1.5.0",
     "node-addon-api": "^8.6.0"
-  }
+  },
+  "files": [
+    "dist",
+    "scripts",
+    "src",
+    "binding.gyp",
+    "**/*.cpp",
+    "**/*.h",
+    "**/*.hpp",
+    "**/*.cc"
+  ]
 }
