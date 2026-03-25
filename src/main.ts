@@ -1,16 +1,16 @@
 import { KeyCode, isExtendedKey } from './key-codes';
 const vKeyboard = require('bindings')('v-keyboard.node');
 
-export function keyDown(keyCode: KeyCode) {
-    if (isExtendedKey(keyCode)) {
+export function keyDown(keyCode: number, isExtended: boolean = false) {
+    if (isExtended) {
         return vKeyboard.keyDownExtended(keyCode);
     }
 
     return vKeyboard.keyDown(keyCode);
 }
 
-export function keyUp(keyCode: KeyCode) {
-    if (isExtendedKey(keyCode)) {
+export function keyUp(keyCode: number, isExtended: boolean = false) {
+    if (isExtended) {
         return vKeyboard.keyUpExtended(keyCode);
     }
 

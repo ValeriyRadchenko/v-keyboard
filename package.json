@@ -1,7 +1,7 @@
 {
   "name": "virtual-keyboard",
-  "version": "0.1.0",
-  "description": "",
+  "version": "0.1.1",
+  "description": "Keyboard key press emulation",
   "main": "./dist/main.js",
   "scripts": {
     "install": "node scripts/install.js",
